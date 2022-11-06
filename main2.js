@@ -1,7 +1,7 @@
 const matchContainer = document.getElementById("match-container");
 let opponentName = "saeed";
-let matchResult = "بردی 13-14";
-let medalGet = 2;
+let matchResult = "13/14 بردی";
+let medalGet = [2, 4, 5, 1, 3, 5, 2];
 let matchNumber = 7;
 
 for(let i = 1; i<=matchNumber; i++){
@@ -45,5 +45,21 @@ for(let i = 1; i<=matchNumber; i++){
     let starPic5 = document.createElement("div");
     starPic5.setAttribute('class', 'star-pic');
     star.appendChild(starPic5);
+    
+        if(medalGet[i-1]<6 && medalGet[i-1]>0){
+            starPic1.setAttribute("class", "golden-medals");
+        }
+        if(medalGet[i-1]<6 && medalGet[i-1]>1){
+            starPic2.setAttribute("class", "golden-medals");
+        }
+        if(medalGet[i-1]<6 && medalGet[i-1]>2){
+            starPic3.setAttribute("class", "golden-medals");
+        }
+        if(medalGet[i-1]<6 && medalGet[i-1]>3){
+            starPic4.setAttribute("class", "golden-medals");
+        }
+        if(medalGet[i-1]<6 && medalGet[i-1]>4){
+            starPic5.setAttribute("class", "golden-medals");
+        }
 
 }
