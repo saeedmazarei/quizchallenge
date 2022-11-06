@@ -2,7 +2,7 @@ const changeProgress = document.getElementById("pr-bars");
 const firstTik = document.getElementById("first-tik");
 const secondTik = document.getElementById("second-tik");
 const thirdTik = document.getElementById("third-tik");
-let score = 30;
+let score = 10;
 score = (score * 100) / 60;
 if(score>100) {
     changeProgress.style.width = "100%";
